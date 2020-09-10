@@ -1,0 +1,250 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FAFAFA;
+	background-image: url("bg.png");
+	background-size: cover;
+	background-position: center top;
+	animation: transitionIn 2s 1s forwards;
+	-webkit-font-smoothing: antialiased;
+	/*background-image: url("bg.png");
+	background-size: cover;
+	background-position: center center; */
+	/* #C19547 2275x1794*/
+}
+
+#one {
+	display: grid;
+	position: absolute;
+	top: 0;
+	grid-template-columns: 50% 50%;
+}
+
+#logo2 {
+	width: 200px;
+	display: none;
+}
+
+#frame {
+	position: relative;
+	grid-column-start: 1;
+	background-image: url("finaltown.png");
+	background-size: 650px 738px;
+	width: 650px;
+	height: 738px;
+	justify-self: center;
+	align-self: center;
+}
+
+#catch {
+	width: 302px;
+	position: absolute;
+	top: 83px;
+	left: 305px;
+}
+
+#talk {
+	grid-column-start: 2;
+	position: relative;
+	align-self: center;
+}
+
+#talk #blub {
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+}
+
+#talk #blub2 {
+	font-size: 14px;
+	line-height: 18px;
+	color: #7F1418;
+	margin-right: 150px;
+}
+
+#talk h1 {
+	color: black;
+	font-size: 42px;
+	margin: 0 150px 5% 40px;
+	justify-self: center;
+}
+
+#talk h3 {
+	font-size: 16px;
+	margin: 10px 40px;
+}
+
+#talk p {
+	margin: 0 150px 5% 40px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #3D3D3D;
+}
+
+form {
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+form .block {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+input[type=text] {
+	width: 125px;
+	background: none;
+	color: #7F1418;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 5px;
+	border: 2px solid #7F1418;
+}
+
+input[type=email] {
+	width: 225px;
+	background: none;
+	color: black;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 2px solid #7F1418;
+	margin-right: 20px;
+}
+
+select {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px solid #7F1418;
+}
+
+input[type=submit] {
+	background-color: #7F1418;
+	border: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	padding: 7px 15px;
+	border-radius: 20px;
+	margin: 10px 20px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+#talk form p {
+	font-size: 14px;
+	color: #7F1418;
+	margin: 0;
+}
+
+#talk #parting {
+	font-size: 14px;
+	margin: 30px 0 40px 40px;
+}
+
+#talk img {
+	margin: 100px 0 30px 40px;
+}
+
+#parting a {
+	color: #7F1418;
+	text-decoration: none;
+}
+
+#one #talk #thanks {
+	visibility: hidden;
+	margin: 5% 100 5% 40px;
+}
+
+#thing {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 5% 150px 5% 40px;
+	background-color: black;
+}
+
+@media screen and (max-width: 1600px) {
+	#talk h1 {
+		font-size: 38px;
+	}
+	#talk p {
+		font-size: 14px;
+		line-height: 18px;
+		margin: 5% 150px 5% 40px;
+	}
+	#one #talk #thanks {
+		visibility: hidden;
+		margin: 3% 100 3% 40px;
+	}
+	input[type=submit] {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	#one {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		background-image: none;
+	}
+	#frame {
+		margin: 50px auto;
+		background-size: 303px 341px;
+		width: 303px;
+		height: 341px;
+	}
+	#talk #logos {
+		margin-top: 10px;
+	}
+	#catch {
+		width: 141px;
+		position: absolute;
+		top: 39px;
+		left: 142px;
+	}
+	#talk #parting {
+		margin-bottom: 30px;
+	}
+	#talk #blub {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#one {
+		margin-bottom: 30px;
+	}
+	#thing {
+		margin-right: 45px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	#talk h1 {
+		font-size: 24px;
+		text-align: left;
+		margin-right: 45px;
+	}
+	#talk #blub, #talk #blub2 {
+		margin-right: 45px;
+	}
+	#talk p {
+		font-size: 14px;
+		line-height: 16px;
+		margin-right: 45px;
+	}
+	form {
+		margin-top: 30px;
+	}
+	form .block {
+		display: block;
+		margin: 10px 0 15px 10px;
+	}
+	#talk #parting {
+		font-size: 12px;
+	}
+}
