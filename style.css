@@ -48,7 +48,7 @@ body {
 	align-self: center;
 }
 
-#talk #blub {
+#talk .blub {
 	font-size: 18px;
 	line-height: 24px;
 	color: black;
@@ -166,6 +166,20 @@ input[type=submit] {
 	background-color: black;
 }
 
+button {
+	background-color: #7F1418;
+	outline: none;
+	border: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	padding: 7px 15px;
+	border-radius: 20px;
+	margin: 0 40px;
+	cursor: pointer;
+	-webkit-appearance: none;	
+}
+
 @media screen and (max-width: 1600px) {
 	#talk h1 {
 		font-size: 38px;
@@ -229,7 +243,7 @@ input[type=submit] {
 		text-align: left;
 		margin-right: 45px;
 	}
-	#talk #blub, #talk #blub2 {
+	#talk .blub, #talk #blub2 {
 		margin-right: 45px;
 	}
 	#talk p {
